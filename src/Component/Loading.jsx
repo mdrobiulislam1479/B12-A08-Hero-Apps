@@ -1,9 +1,14 @@
-import React from 'react';
+import React from "react";
+import Logo from "../assets/logo.png";
 
 const Loading = () => {
   return (
-    <div>
-      
+    <div className="bg-gray-200 flex justify-center items-center min-h-screen">
+      <p className="flex items-center text-6xl font-bold tracking-widest animate-pulse text-gray-400">
+        L{" "}
+        <img src={Logo} className="w-[100px] px-4 animate-spin duration-1000" />{" "}
+        A D I N G
+      </p>
     </div>
   );
 };

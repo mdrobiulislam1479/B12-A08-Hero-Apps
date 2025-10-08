@@ -3,14 +3,14 @@ import Navbar from "../Component/Navbar";
 import { Outlet } from "react-router";
 import Footer from "../Component/Footer";
 import useDataLoad from "../Hooks/useDataLoad";
-import { MoonLoader } from "react-spinners";
+import Loading from "../Component/Loading";
 
 const Root = () => {
   const { loading } = useDataLoad();
   return (
     <>
       {loading ? (
-        <MoonLoader></MoonLoader>
+        <Loading></Loading>
       ) : (
         <div className="flex flex-col min-h-screen">
           <Navbar></Navbar>
