@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733585.png",
+    "title": "WhatsApp",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 1,
+    "description": "WhatsApp is a free, secure messaging and calling app used by over 2 billion people worldwide. It allows users to send text messages, voice messages, make voice and video calls, and share images, documents, user locations, and other media. All communications are protected with end-to-end encryption. The app supports group chats and works across mobile and desktop platforms. It is known for its simplicity, speed, and reliability, especially in regions with limited connectivity. WhatsApp has become a staple in global communication for both personal and business use.",
+    "size": 45,
+    "reviews": 52000000,
+    "ratingAvg": 4.6,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 3150000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2111/2111463.png",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "Instagram is a visual-first social media platform where users can share photos, videos, and stories with followers. It offers creative tools like filters, effects, reels, and live video, and allows direct messaging and interaction through comments and likes. Used by influencers, creators, brands, and everyday users, Instagram is a key platform for social interaction, discovery, and expression. Its algorithm curates content based on interests, making each feed highly personalized. It’s available for iOS, Android, and web, and has grown to over 2 billion active users globally.",
+    "size": 52,
+    "reviews": 47000000,
+    "ratingAvg": 4.5,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 250000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 3000000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3046/3046122.png",
+    "title": "TikTok",
+    "companyName": "ByteDance Ltd.",
+    "id": 3,
+    "description": "TikTok is a fast-growing video-sharing social media app where users create, share, and discover short videos. It features a personalized feed driven by AI that shows trending content from around the world. Users can add music, filters, and effects to their videos, participate in challenges, and connect via comments and messages. TikTok's interactive and creative platform appeals to a wide demographic, from teenagers to adults. It’s known for viral trends, entertainment, and influencer culture. Available on iOS and Android, TikTok has millions of daily active users worldwide.",
+    "size": 60,
+    "reviews": 45000000,
+    "ratingAvg": 4.7,
+    "downloads": "3.5B",
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 120000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 1100000 },
+      { "name": "5 star", "count": 2870000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/174/174872.png",
+    "title": "Spotify",
+    "companyName": "Spotify Ltd.",
+    "id": 4,
+    "description": "Spotify is a leading music streaming platform offering millions of songs, podcasts, and playlists worldwide. Users can discover new music through curated playlists, personalized recommendations, and social sharing. The app supports offline listening, high-quality audio streaming, and integrates with smart devices. Spotify offers both free (ad-supported) and premium subscriptions. Its easy-to-use interface and vast library make it a favorite among music lovers and creators alike. Available across mobile, desktop, and web, Spotify has transformed the way people experience music.",
+    "size": 70,
+    "reviews": 39000000,
+    "ratingAvg": 4.5,
+    "downloads": "1.5B",
+    "ratings": [
+      { "name": "1 star", "count": 180000 },
+      { "name": "2 star", "count": 170000 },
+      { "name": "3 star", "count": 650000 },
+      { "name": "4 star", "count": 1400000 },
+      { "name": "5 star", "count": 3300000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 5,
+    "description": "Snapchat is a multimedia messaging app popular for its ephemeral photos and videos called ‘Snaps’ that disappear after being viewed. It features Stories, filters, AR lenses, and chat functions, making communication fun and interactive. Snapchat supports video and voice calls, Discover content from publishers, and Snap Map for location sharing. Its youthful audience and innovative features keep it at the forefront of social media. The app is available on iOS and Android, encouraging spontaneous sharing and creativity.",
+    "size": 58,
+    "reviews": 32000000,
+    "ratingAvg": 4.3,
+    "downloads": "1.2B",
+    "ratings": [
+      { "name": "1 star", "count": 250000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 1300000 },
+      { "name": "5 star", "count": 3200000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 6,
+    "description": "YouTube is the world’s largest video-sharing platform, allowing users to watch, upload, and share videos on virtually any topic. It offers live streaming, personalized recommendations, subscriptions, playlists, and community features like comments and likes. Creators can monetize content through ads and memberships. YouTube’s mobile app supports offline downloads, background play, and casting to smart devices. It has become a key entertainment and education source worldwide with billions of monthly active users.",
+    "size": 65,
+    "reviews": 70000000,
+    "ratingAvg": 4.7,
+    "downloads": "6B",
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 1600000 },
+      { "name": "5 star", "count": 6200000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733547.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 7,
+    "description": "Facebook is a social networking app connecting people worldwide to share updates, photos, events, and messages. It supports groups, pages, marketplace, live streaming, and integrated messaging via Messenger. Facebook’s news feed algorithm curates personalized content from friends, pages, and ads. It offers robust privacy controls and is available on mobile and desktop. Facebook continues to evolve as a platform for social interaction, entertainment, and business marketing, with billions of users globally.",
+    "size": 70,
+    "reviews": 62000000,
+    "ratingAvg": 4.4,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 350000 },
+      { "name": "2 star", "count": 280000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 1400000 },
+      { "name": "5 star", "count": 5500000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732228.png",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 8,
+    "description": "Netflix is a leading streaming service offering a vast library of movies, TV shows, documentaries, and original content. Users can watch unlimited content on multiple devices with personalized recommendations and offline downloads. Netflix offers multiple subscription tiers with different features. Its user-friendly interface, diverse content library, and global reach make it a favorite entertainment platform for millions of users worldwide.",
+    "size": 55,
+    "reviews": 40000000,
+    "ratingAvg": 4.6,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 120000 },
+      { "name": "3 star", "count": 450000 },
+      { "name": "4 star", "count": 1100000 },
+      { "name": "5 star", "count": 3200000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/174/174857.png",
+    "title": "LinkedIn",
+    "companyName": "Microsoft Corporation",
+    "id": 9,
+    "description": "LinkedIn is the world’s largest professional networking platform, connecting millions of professionals for job searching, recruitment, and career development. Users can share updates, articles, and network with colleagues and industry experts. LinkedIn offers job listings, learning courses, messaging, and company pages. It’s widely used for personal branding and business networking, available on mobile and desktop.",
+    "size": 48,
+    "reviews": 28000000,
+    "ratingAvg": 4.4,
+    "downloads": "0.8B",
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 2200000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733579.png",
+    "title": "Twitter",
+    "companyName": "Twitter, Inc.",
+    "id": 10,
+    "description": "Twitter is a popular social media platform known for real-time news, microblogging, and conversations. Users post tweets, follow other accounts, and engage through likes, retweets, and replies. It supports multimedia content, polls, and live broadcasts. Twitter serves as a hub for trends, public discourse, and direct communication between individuals, brands, and public figures. Available on multiple platforms, it has millions of active users worldwide.",
+    "size": 47,
+    "reviews": 37000000,
+    "ratingAvg": 4.2,
+    "downloads": "0.9B",
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 800000 },
+      { "name": "4 star", "count": 1400000 },
+      { "name": "5 star", "count": 3300000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
+    "title": "Telegram",
+    "companyName": "Telegram Messenger LLP",
+    "id": 11,
+    "description": "Telegram is a cloud-based messaging app focused on speed, security, and privacy. It offers encrypted chats, group chats, channels, file sharing, and voice/video calls. Telegram supports bots, stickers, and extensive customization options. It is popular for its open API and large group capacities. Available on multiple platforms, Telegram appeals to users seeking secure and versatile communication tools.",
+    "size": 55,
+    "reviews": 28000000,
+    "ratingAvg": 4.5,
+    "downloads": "0.6B",
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 2100000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/733/733564.png",
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "id": 12,
+    "description": "Pinterest is a visual discovery and bookmarking platform where users find and save creative ideas, inspiration, and DIY projects. It supports image and video pins, boards for organization, and personalized recommendations. Pinterest is widely used for planning events, fashion, recipes, and home design. It’s available on web and mobile and has millions of active users globally.",
+    "size": 50,
+    "reviews": 18000000,
+    "ratingAvg": 4.3,
+    "downloads": "0.4B",
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1400000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png",
+    "title": "Uber",
+    "companyName": "Uber Technologies, Inc.",
+    "id": 13,
+    "description": "Uber is a ride-hailing app that connects passengers with drivers in real time. Users can request rides, track arrival times, and pay via the app. Uber also offers food delivery and freight services in select locations. It uses GPS tracking, ratings, and dynamic pricing to optimize service. The app supports multiple ride options, including carpooling, luxury rides, and bikes. Uber operates in hundreds of cities worldwide and is known for revolutionizing urban transportation.",
+    "size": 60,
+    "reviews": 15000000,
+    "ratingAvg": 4.1,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 220000 },
+      { "name": "2 star", "count": 180000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 1900000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/854/854878.png",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 14,
+    "description": "Google Maps is a mapping and navigation app offering detailed maps, real-time traffic, turn-by-turn navigation, and route planning for drivers, cyclists, and pedestrians. It also includes features like local business info, reviews, street view, and public transport schedules. Google Maps integrates with other Google services and supports offline maps. It is widely used globally for travel, commuting, and exploring new places.",
+    "size": 80,
+    "reviews": 55000000,
+    "ratingAvg": 4.6,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 140000 },
+      { "name": "3 star", "count": 500000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 4000000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2111/2111615.png",
+    "title": "Slack",
+    "companyName": "Slack Technologies",
+    "id": 15,
+    "description": "Slack is a collaboration and messaging platform designed for teams and workplaces. It offers organized conversations in channels, direct messaging, file sharing, and integration with numerous productivity tools. Slack enhances communication efficiency with searchable history, notifications, and video calls. It supports mobile and desktop devices and is widely adopted for remote and office team communication.",
+    "size": 60,
+    "reviews": 12000000,
+    "ratingAvg": 4.3,
+    "downloads": "0.5B",
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 140000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 900000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Zoom_Communications_Logo.svg",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 16,
+    "description": "Zoom is a video conferencing app widely used for virtual meetings, webinars, and remote collaboration. It supports HD video, audio calls, screen sharing, chat, and recording. Zoom integrates with calendars and productivity apps and offers breakout rooms for focused discussions. It’s available across platforms and is favored for its ease of use and reliability, especially in remote work and education.",
+    "size": 65,
+    "reviews": 35000000,
+    "ratingAvg": 4.4,
+    "downloads": "0.7B",
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 250000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 1400000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Dropbox_Logo_01.svg",
+    "title": "Dropbox",
+    "companyName": "Dropbox, Inc.",
+    "id": 17,
+    "description": "Dropbox is a cloud storage and file synchronization service that lets users save files online and access them from any device. It supports file sharing, collaboration, automatic backup, and integrates with productivity tools. Dropbox offers personal and business plans with varying storage and features. The app is known for reliability, ease of use, and secure data management.",
+    "size": 50,
+    "reviews": 15000000,
+    "ratingAvg": 4.3,
+    "downloads": "0.6B",
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 140000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1100000 }
+    ]
+  },
+  {
+    "image": "https://cloud.gmelius.com/public/logos/google/Google_Drive_Logo_512px.png",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "id": 18,
+    "description": "Google Drive is a cloud storage service that enables users to store files, share them, and collaborate in real time on documents, spreadsheets, and presentations. It integrates seamlessly with Google Workspace apps and supports offline access. Google Drive offers a free tier and paid plans with additional storage. It’s popular for its ease of use and collaboration features.",
+    "size": 65,
+    "reviews": 28000000,
+    "ratingAvg": 4.5,
+    "downloads": "1.5B",
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 2300000 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732221.png",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "id": 19,
+    "description": "Microsoft Teams is a collaboration platform combining chat, video meetings, file storage, and app integration for teams and organizations. It supports threaded conversations, online meetings, document collaboration with Office 365, and custom app integrations. Teams is used widely for remote and in-office collaboration, improving productivity across industries.",
+    "size": 85,
+    "reviews": 25000000,
+    "ratingAvg": 4.4,
+    "downloads": "0.7B",
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 2000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg",
+    "title": "Airbnb",
+    "companyName": "Airbnb, Inc.",
+    "id": 20,
+    "description": "Airbnb is an online marketplace for lodging, primarily homestays for vacation rentals and tourism experiences. Users can book unique accommodations, including homes, apartments, and boutique hotels. Airbnb offers host and guest reviews, secure payments, and personalized recommendations. It has transformed travel by enabling peer-to-peer short-term rentals and local experiences around the world.",
+    "size": 60,
+    "reviews": 14000000,
+    "ratingAvg": 4.6,
+    "downloads": "0.6B",
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 900000 }
+    ]
+  }
+]

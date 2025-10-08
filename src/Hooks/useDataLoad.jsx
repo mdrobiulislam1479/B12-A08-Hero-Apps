@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 
 const useDataLoad = () => {
-  return (
-    <div>
-      
-    </div>
-  );
+  const [data, setData] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(true);
+    fetch("/appsData.json")
+      .then((res) => res.json())
+      .then((data) => setData(data))
+      .catch((error) => setError(error))
+      .finally(() => setLoading(false));
+  }, []);
+  return [data, error, loading];
 };
 
 export default useDataLoad;
