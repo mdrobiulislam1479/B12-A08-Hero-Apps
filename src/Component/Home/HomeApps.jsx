@@ -2,7 +2,7 @@ import React from "react";
 import useDataLoad from "../../Hooks/useDataLoad";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Loading from "../Loading";
 
@@ -23,7 +23,8 @@ const HomeApps = () => {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 max-w-[1440px] mx-auto pb-10 gap-4">
             {homeData.map((data, i) => (
-              <div
+              <Link
+                to={`/apps/${data.id}`}
                 key={i}
                 className="bg-white shadow-2xl p-4 rounded-2xl flex flex-col"
               >
@@ -43,7 +44,7 @@ const HomeApps = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="flex justify-center  pb-10 md:pb-20">

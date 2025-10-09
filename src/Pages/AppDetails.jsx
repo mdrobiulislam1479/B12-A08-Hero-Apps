@@ -6,6 +6,7 @@ import Rechart from "../Component/Rechart";
 import downloadsIcon from "../assets/icon-downloads.png";
 import ratingsIcon from "../assets/icon-ratings.png";
 import reviewIcon from "../assets/icon-review.png";
+import AppError from "./AppError";
 
 const AppDetails = () => {
   const { data, loading } = useDataLoad();
@@ -13,7 +14,7 @@ const AppDetails = () => {
   const AppData = data.find((app) => app.id === Number(id));
 
   if (!AppData) {
-    return <div>{loading ? <Loading></Loading> : <p>App not found.</p>}</div>;
+    return <div>{loading ? <Loading></Loading> : <AppError></AppError>}</div>;
   }
 
   return (
