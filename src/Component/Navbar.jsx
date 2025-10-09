@@ -7,7 +7,7 @@ import Logo from "../assets/logo.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-white text-black border-b-[1px] border-gray-300">
+    <nav className="bg-white text-black border-b-[1px] border-gray-300 fixed w-full z-10">
       <div className="max-w-[1440px] mx-auto px-6 2xl:px-0">
         <div className="flex justify-between h-16 items-center">
           <Link to={"/"} className="flex gap-2 items-center">

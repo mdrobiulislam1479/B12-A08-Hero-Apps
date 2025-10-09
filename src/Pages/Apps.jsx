@@ -4,6 +4,7 @@ import { HiOutlineDownload } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
 import Loading from "../Component/Loading";
 import { Link } from "react-router";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Apps = () => {
   const { data, loading } = useDataLoad();
@@ -69,14 +70,14 @@ const Apps = () => {
             <Loading />
           ) : searchedData.length === 0 ? (
             <div className="text-center py-20">
-              <h2 className="text-5xl font-semibold text-gray-600 mb-5">
-                No Data Found
+              <h2 className="text-3xl font-semibold text-gray-600 mb-5">
+                No Search Data Found.
               </h2>
               <button
                 onClick={() => setSearch("")}
-                className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-0 w-[200px]"
+                className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-0 w-[150px]"
               >
-                Show All Apps
+                Show All Apps <FaArrowRightLong />
               </button>
             </div>
           ) : (

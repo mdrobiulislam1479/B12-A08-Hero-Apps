@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router";
 import Root from "../Root/Root";
 import Home from "../Pages/Home";
 import Apps from "../Pages/Apps";
-import installation from "../Pages/installation";
+import Installation from "../Pages/Installation";
 import AppDetails from "../Pages/AppDetails";
 import PageError from "../Pages/PageError";
 
@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/installation",
-        Component: installation,
+        Component: Installation,
       },
       {
         path: "/apps/:id",

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useDataLoad from "../Hooks/useDataLoad";
 import Loading from "../Component/Loading";
@@ -7,13 +7,19 @@ import downloadsIcon from "../assets/icon-downloads.png";
 import ratingsIcon from "../assets/icon-ratings.png";
 import reviewIcon from "../assets/icon-review.png";
 import AppError from "./AppError";
-import { handleInstall } from "../localStroage";
+import { handleInstall, isAppInstalled } from "../localStroage";
 
 const AppDetails = () => {
   const { data, loading } = useDataLoad();
   const { id } = useParams();
   const [status, setStatus] = useState(true);
   const AppData = data.find((app) => app.id === Number(id));
+
+  useEffect(() => {
+    if (AppData && isAppInstalled(AppData.id)) {
+      setStatus(false);
+    }
+  }, [AppData]);
 
   if (!AppData) {
     return <div>{loading ? <Loading></Loading> : <AppError></AppError>}</div>;
@@ -59,12 +65,18 @@ const AppDetails = () => {
             </div>
           </div>
           <button
-            className="btn bg-[#00D390] text-white px-10 py-3 rounded-md "
             onClick={() => {
               handleInstall(AppData);
               setStatus(false);
             }}
             disabled={status === false}
+            className={`px-10 py-3 rounded-md font-medium transition-all
+            ${
+              status
+                ? "bg-[#00D390] text-white hover:bg-[#00b87f]"
+                : "bg-gray-300 text-gray-500 cursor-not-allowed"
+            }
+          `}
           >
             {status ? `Install Now (${AppData.size} MB)` : "Installed"}
           </button>
