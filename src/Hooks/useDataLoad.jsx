@@ -12,7 +12,7 @@ const useDataLoad = () => {
       .catch((error) => setError(error))
       .finally(() => setLoading(false));
   }, []);
-  return {data, error, loading};
+  return { data, error, loading };
 };
 
 export default useDataLoad;

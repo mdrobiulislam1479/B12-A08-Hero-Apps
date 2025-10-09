@@ -8,35 +8,9 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const data = [
-  {
-    name: "Page A",
-
-    pv: 800,
-  },
-  {
-    name: "Page B",
-
-    pv: 967,
-  },
-  {
-    name: "Page C",
-
-    pv: 1098,
-  },
-  {
-    name: "Page D",
-
-    pv: 1200,
-  },
-  {
-    name: "Page E",
-
-    pv: 1108,
-  },
-];
-
-const Rechart = () => {
+const Rechart = ({ ratings }) => {
+  const data = [...ratings].reverse();
+  console.log(data);
   return (
     <ResponsiveContainer width="100%" height={300}>
       <ComposedChart layout="vertical" data={data} barCategoryGap={10}>
@@ -48,7 +22,7 @@ const Rechart = () => {
           tickLine={false}
         />
         <Tooltip />
-        <Bar dataKey="pv" barSize={20} fill="#413ea0" />
+        <Bar dataKey="count" barSize={20} fill="#FF8811" />
       </ComposedChart>
     </ResponsiveContainer>
   );
