@@ -4,6 +4,7 @@ import { Outlet } from "react-router";
 import Footer from "../Component/Footer";
 import useDataLoad from "../Hooks/useDataLoad";
 import Loading from "../Component/Loading";
+import { ToastContainer } from "react-toastify";
 
 const Root = () => {
   const { loading } = useDataLoad();
@@ -18,6 +19,7 @@ const Root = () => {
             <Outlet></Outlet>
           </div>
           <Footer></Footer>
+          <ToastContainer position="top-center" />
         </div>
       )}
     </>

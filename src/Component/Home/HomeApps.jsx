@@ -23,7 +23,7 @@ const HomeApps = () => {
             <Link
               to={`/apps/${data.id}`}
               key={i}
-              className="bg-white shadow-2xl p-4 rounded-2xl flex flex-col"
+              className="bg-white shadow-2xl p-4 rounded-2xl flex flex-col hover:scale-105 duration-300"
             >
               <div className="p-10 bg-gray-300 rounded-2xl flex-1">
                 <img src={data.image} />
@@ -32,7 +32,7 @@ const HomeApps = () => {
               <div className="flex justify-between items-center">
                 <div>
                   <p className="flex items-center gap-2 font-medium bg-[#F1F5E8] py-1 px-2 rounded-md text-[#00D390]">
-                    <HiOutlineDownload /> {data.downloads}
+                    <HiOutlineDownload /> {data.downloads}B
                   </p>
                 </div>
                 <div>
@@ -49,7 +49,7 @@ const HomeApps = () => {
             to={"/apps"}
             className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-0 w-[200px]"
           >
-            Show All <FaArrowRightLong />
+            Show All Apps <FaArrowRightLong className="animate-pulse" />
           </NavLink>
         </div>
       </div>

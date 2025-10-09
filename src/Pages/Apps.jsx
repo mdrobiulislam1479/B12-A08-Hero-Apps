@@ -71,13 +71,13 @@ const Apps = () => {
           ) : searchedData.length === 0 ? (
             <div className="text-center py-20">
               <h2 className="text-3xl font-semibold text-gray-600 mb-5">
-                No Search Data Found.
+                No App Found.
               </h2>
               <button
                 onClick={() => setSearch("")}
                 className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-0 w-[150px]"
               >
-                Show All Apps <FaArrowRightLong />
+                Show All Apps <FaArrowRightLong className="animate-pulse"/>
               </button>
             </div>
           ) : (
@@ -86,7 +86,7 @@ const Apps = () => {
                 <Link
                   to={`/apps/${data.id}`}
                   key={i}
-                  className="bg-white shadow-2xl p-4 rounded-2xl flex flex-col"
+                  className="bg-white shadow-2xl p-4 rounded-2xl flex flex-col hover:scale-105 duration-300"
                 >
                   <div className="p-10 bg-gray-300 rounded-2xl flex-1">
                     <img src={data.image} />
@@ -94,7 +94,7 @@ const Apps = () => {
                   <p className="py-4 text-xl font-medium">{data.title}</p>
                   <div className="flex justify-between items-center">
                     <p className="flex items-center gap-2 font-medium bg-[#F1F5E8] py-1 px-2 rounded-md text-[#00D390]">
-                      <HiOutlineDownload /> {data.downloads}
+                      <HiOutlineDownload /> {data.downloads}B
                     </p>
                     <p className="flex items-center gap-2 font-medium bg-[#FFF0E1] py-1 px-2 rounded-md text-[#FF8811]">
                       <FaStar /> {data.ratingAvg}

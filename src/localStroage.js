@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 export const handleInstall = (AppData) => {
   const existingList = JSON.parse(localStorage.getItem("installList")) || [];
   const isAlreadyInstalled = existingList.some((app) => app.id === AppData.id);
@@ -5,6 +7,7 @@ export const handleInstall = (AppData) => {
     existingList.push(AppData);
     localStorage.setItem("installList", JSON.stringify(existingList));
   }
+  toast.success(`${AppData.title} Installed Successful 😃`);
 };
 
 export const isAppInstalled = (id) => {

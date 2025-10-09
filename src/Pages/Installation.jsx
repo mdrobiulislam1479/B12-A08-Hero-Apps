@@ -4,6 +4,8 @@ import Loading from "../Component/Loading";
 import { HiOutlineDownload } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { NavLink } from "react-router";
+import { toast } from "react-toastify";
 
 const Installation = () => {
   const { loading } = useDataLoad();
@@ -16,9 +18,9 @@ const Installation = () => {
 
   const sortedList = () => {
     if (sortOrder === "asc") {
-      return [...installed].sort((a, b) => a.size - b.size);
+      return [...installed].sort((a, b) => a.downloads - b.downloads);
     } else if (sortOrder === "dsc") {
-      return [...installed].sort((a, b) => b.size - a.size);
+      return [...installed].sort((a, b) => b.downloads - a.downloads);
     } else {
       return installed;
     }
@@ -53,7 +55,9 @@ const Installation = () => {
                 value={sortOrder}
                 onChange={(e) => setSortOrder(e.target.value)}
               >
-                <option value="none">Sort By Size</option>
+                <option value="none" className="opacity-60">
+                  Sort By Size
+                </option>
                 <option value="asc">Low - High</option>
                 <option value="dsc">High - Low</option>
               </select>
@@ -64,9 +68,12 @@ const Installation = () => {
               <h2 className="text-3xl font-semibold text-gray-600 mb-5">
                 No apps installed yet.
               </h2>
-              <button className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-0 w-[150px]">
-                Show All Apps <FaArrowRightLong />
-              </button>
+              <NavLink
+                to={"/apps"}
+                className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-0 w-[150px]"
+              >
+                Show All Apps <FaArrowRightLong className="animate-pulse" />
+              </NavLink>
             </div>
           ) : (
             <div>
@@ -84,7 +91,7 @@ const Installation = () => {
                       <p className="text-[20px] font-medium">{app.title}</p>
                       <div className="flex justify-between items-center w-[180px]">
                         <p className="flex items-center gap-2 text-[#00D390]">
-                          <HiOutlineDownload /> {app.downloads}
+                          <HiOutlineDownload /> {app.downloads}B
                         </p>
                         <p className="flex items-center gap-2 text-[#FF8811]">
                           <FaStar /> {app.ratingAvg}
@@ -95,8 +102,11 @@ const Installation = () => {
                   </div>
                   <div>
                     <button
-                      className="btn bg-[#00D390] text-white py-3 rounded-md w-full sm:w-[140px]"
-                      onClick={() => handleUninstall(app.id)}
+                      className="btn bg-[#00D390] text-white py-3 rounded-md w-full sm:w-[140px] hover:bg-[#00b87f]"
+                      onClick={() => {
+                        toast.success(`${app.title} Uninstalled successful 😔`);
+                        handleUninstall(app.id);
+                      }}
                     >
                       Uninstall
                     </button>
