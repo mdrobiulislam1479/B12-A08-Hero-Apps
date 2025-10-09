@@ -14,7 +14,7 @@ const Root = () => {
       ) : (
         <div className="flex flex-col min-h-screen">
           <Navbar></Navbar>
-          <div className="flex-1">
+          <div className="flex-1 bg-[#D9D9D940]">
             <Outlet></Outlet>
           </div>
           <Footer></Footer>

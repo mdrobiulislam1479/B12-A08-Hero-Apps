@@ -15,7 +15,7 @@ const AppError = () => {
           <h1 className="text-3xl sm:text-5xl font-semibold text-center">
             OPPS!! APP NOT FOUND
           </h1>
-          <p className="text-[#627382]">
+          <p className="text-[#627382] text-center">
             The App you are requesting is not found on our system. please try
             another apps
           </p>

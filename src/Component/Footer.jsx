@@ -13,7 +13,7 @@ const Footer = () => {
             <img src={Logo} alt="main-logo" className="w-10 h-10" />
             <p className="font-bold">HERO.IO</p>
           </Link>
-          <p className="sm:max-w-[200px] xl:max-w-[400px] mt-3">
+          <p className="sm:max-w-[200px] xl:max-w-[400px] mt-3 text-justify">
             At HERO.IO , we craft innovative apps designed to make everyday life
             simpler, smarter, and more exciting.Our goal is to turn your ideas
             into digital experiences that truly make an impact.

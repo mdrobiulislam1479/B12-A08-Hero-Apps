@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router";
 import useDataLoad from "../Hooks/useDataLoad";
 import Loading from "../Component/Loading";
@@ -7,10 +7,12 @@ import downloadsIcon from "../assets/icon-downloads.png";
 import ratingsIcon from "../assets/icon-ratings.png";
 import reviewIcon from "../assets/icon-review.png";
 import AppError from "./AppError";
+import { handleInstall } from "../localStroage";
 
 const AppDetails = () => {
   const { data, loading } = useDataLoad();
   const { id } = useParams();
+  const [status, setStatus] = useState(true);
   const AppData = data.find((app) => app.id === Number(id));
 
   if (!AppData) {
@@ -56,8 +58,15 @@ const AppDetails = () => {
               </p>
             </div>
           </div>
-          <button className="btn bg-[#00D390] text-white px-10 py-3 rounded-md ">
-            Install Now ({AppData.size} MB)
+          <button
+            className="btn bg-[#00D390] text-white px-10 py-3 rounded-md "
+            onClick={() => {
+              handleInstall(AppData);
+              setStatus(false);
+            }}
+            disabled={status === false}
+          >
+            {status ? `Install Now (${AppData.size} MB)` : "Installed"}
           </button>
         </div>
       </div>
@@ -67,7 +76,7 @@ const AppDetails = () => {
       </div>
       <div className="max-w-[1440px] mx-auto">
         <h1 className="text-2xl font-semibold mt-10 mb-6">Description</h1>
-        <p className="">{AppData.description}</p>
+        <p className="text-justify">{AppData.description}</p>
       </div>
     </div>
   );

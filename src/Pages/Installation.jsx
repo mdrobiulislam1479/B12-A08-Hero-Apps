@@ -1,7 +1,92 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import useDataLoad from "../Hooks/useDataLoad";
+import Loading from "../Component/Loading";
+import { HiOutlineDownload } from "react-icons/hi";
+import { FaStar } from "react-icons/fa";
 
-const installation = () => {
-  return <div>This is installation page</div>;
+const Installation = () => {
+  const { loading } = useDataLoad();
+  const [installed, setInstalled] = useState([]);
+  const [sortOrder, setSortOrder] = useState("none");
+  useEffect(() => {
+    const installedList = JSON.parse(localStorage.getItem("installList"));
+    if (installedList) setInstalled(installedList);
+  }, []);
+
+  const sortedList = () => {
+    if (sortOrder === "asc") {
+      return [...installed].sort((a, b) => a.size - b.size);
+    } else if (sortOrder === "dsc") {
+      return [...installed].sort((a, b) => b.size - a.size);
+    } else {
+      return installed;
+    }
+  };
+
+  return (
+    <div>
+      {loading ? (
+        <Loading></Loading>
+      ) : (
+        <div className="max-w-[1440px] mx-auto px-5 2xl:px-0">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#001931] text-center pt-10 md:pt-20">
+            Your Installed Apps
+          </h1>
+          <p className="text-[#627382] text-center mb-10 mt-4">
+            Explore All Trending Apps on the Market developed by us
+          </p>
+          <div className="flex justify-between  pb-5 ">
+            <h2 className="text-2xl font-semibold text-center mb-3 sm:mb-0">
+              ({installed.length}) Apps Found
+            </h2>
+            <div className="w-[150px]">
+              <select
+                className="select"
+                value={sortOrder}
+                onChange={(e) => setSortOrder(e.target.value)}
+              >
+                <option value="none">Sort By Size</option>
+                <option value="asc">Low - High</option>
+                <option value="dsc">High - Low</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            {sortedList().map((app, i) => (
+              <div
+                key={i}
+                className="bg-white p-4 mb-4 rounded-md sm:flex justify-between items-center"
+              >
+                <div className="flex items-center gap-4 mb-3 sm:mb-0">
+                  <img
+                    src={app.image}
+                    className="w-20 h-20 bg-gray-200 rounded-md p-2"
+                  />
+                  <div className="space-y-3">
+                    <p className="text-[20px] font-medium">{app.title}</p>
+                    <div className="flex justify-between items-center w-[180px]">
+                      <p className="flex items-center gap-2 text-[#00D390]">
+                        <HiOutlineDownload /> {app.downloads}
+                      </p>
+                      <p className="flex items-center gap-2 text-[#FF8811]">
+                        <FaStar /> {app.ratingAvg}
+                      </p>
+                      <p className="text-[#627382]">{app.size} MB</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button className="btn bg-[#00D390] text-white py-3 rounded-md w-full sm:w-[140px]">
+                    Uninstall
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
 };
 
-export default installation;
+export default Installation;

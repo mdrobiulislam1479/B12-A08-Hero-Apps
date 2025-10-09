@@ -10,7 +10,6 @@ import {
 
 const Rechart = ({ ratings }) => {
   const data = [...ratings].reverse();
-  console.log(data);
   return (
     <ResponsiveContainer width="100%" height={300}>
       <ComposedChart layout="vertical" data={data} barCategoryGap={10}>

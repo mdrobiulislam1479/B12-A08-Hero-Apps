@@ -3,7 +3,7 @@ import Logo from "../assets/logo.png";
 
 const Loading = () => {
   return (
-    <div className="bg-gray-200 flex justify-center items-center min-h-screen">
+    <div className="bg-transparent flex justify-center items-center min-h-screen">
       <p className="flex items-center text-3xl md:text-6xl font-bold tracking-widest animate-pulse text-gray-400">
         L{" "}
         <img
