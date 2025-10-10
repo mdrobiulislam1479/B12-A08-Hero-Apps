@@ -69,7 +69,7 @@ const Apps = () => {
           {searchLoading ? (
             <Loading />
           ) : searchedData.length === 0 ? (
-            <div className="text-center py-20">
+            <div className="text-center py-20 border-t-2 border-gray-300 max-w-[1440px] mx-auto">
               <h2 className="text-3xl font-semibold text-gray-600 mb-5">
                 No App Found.
               </h2>
@@ -77,7 +77,7 @@ const Apps = () => {
                 onClick={() => setSearch("")}
                 className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-0 w-[150px]"
               >
-                Show All Apps <FaArrowRightLong className="animate-pulse"/>
+                Show All Apps <FaArrowRightLong className="animate-pulse" />
               </button>
             </div>
           ) : (

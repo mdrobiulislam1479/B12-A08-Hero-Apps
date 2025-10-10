@@ -64,7 +64,7 @@ const Installation = () => {
             </div>
           </div>
           {installed.length === 0 ? (
-            <div className="text-center py-20">
+            <div className="text-center py-20 border-t-2 border-gray-300 max-w-[1440px] mx-auto">
               <h2 className="text-3xl font-semibold text-gray-600 mb-5">
                 No apps installed yet.
               </h2>

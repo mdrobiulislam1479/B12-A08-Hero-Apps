@@ -46,7 +46,7 @@ const AppDetails = () => {
               <img src={downloadsIcon} />
               <p className="pt-1">Downloads</p>
               <p className="text-3xl md:text-[40px] font-extrabold">
-                {AppData.downloads}
+                {AppData.downloads}B
               </p>
             </div>
             <div>
